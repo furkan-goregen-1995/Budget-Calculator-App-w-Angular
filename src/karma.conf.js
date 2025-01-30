@@ -3,6 +3,9 @@
 
 module.exports = function (config) {
   config.set({
+    output: {
+      hashFunction: "xxhash64"
+    },
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
